@@ -1,24 +1,22 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { changeTheme } from "./components/Navbar/Navbar";
+import { linkPage } from "./utils/linkPage";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Footer } from "./components/Footer/Footer";
+import { Home } from "./pages/Home/Home";
+import { Projects } from "./pages/Projects/Projects";
+import { Divider } from "./components/Divider/Divider";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const header = document.querySelector("header");
+header.innerHTML = Navbar();
+const footer = document.querySelector("footer");
+footer.innerHTML = Footer();
 
-setupCounter(document.querySelector('#counter'))
+linkPage("#homelink", Home);
+linkPage("#projectslink", Projects);
+
+Home();
+
+changeTheme();
+
+footer.insertAdjacentHTML("beforebegin", Divider());
