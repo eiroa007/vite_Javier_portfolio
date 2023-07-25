@@ -4,17 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 3rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .home {
     padding: 0 4rem;
   }
 }
 .home > h1 {
   font-size: 8.5rem;
-  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(218, 8, 8, 0.6745800370929622) 0%,
+    rgba(97, 121, 9, 1) 56%,
+    rgba(124, 232, 30, 0.19838956090248594) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

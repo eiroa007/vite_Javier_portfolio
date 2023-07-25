@@ -1,4 +1,4 @@
-export const projects = [
+export const Proyoctlocal = [
     {
     title: "V i v i e n d a s",
     description: "Esta es la descripción de mi Viviendas",
