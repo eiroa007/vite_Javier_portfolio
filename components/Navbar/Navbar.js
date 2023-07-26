@@ -18,7 +18,7 @@ themeBtn.innerText = "☀";
 };
 export const Navbar = () => `
 <nav>
-<h2>Javier Eiroa</h2>
+<h2>JAVIER EIROA</h2>
 <ul>
 <li>
 <a href="#" id="homelink">Inicio</a>
@@ -26,7 +26,7 @@ export const Navbar = () => `
 <li>
 <a href="#" id="projectslink">Info</a>
 </li>
-<a href="#" id="Oficinas">Oficinas</a>
+<a href="#" id="oficinaslink">Oficinas</a>
 <li>
 <button id="themeBtn">☀</button>
 </li>

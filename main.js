@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home/Home";
 import { Projects } from "./pages/Projects/Projects";
 import { Divider } from "./components/Divider/Divider";
-import { Oficinas } from "./pages/Oficinas/Oficinas";
+import { Oficinas } from './pages/Oficinas/Oficinas';
 
 const header = document.querySelector("header");
 header.innerHTML = Navbar();
@@ -17,7 +17,8 @@ footer.innerHTML = Footer();
 linkPage("#homelink", Home);
 
 linkPage("#projectslink", Projects);
-linkPage("#Oficinas", Oficinas);
+linkPage("#oficinaslink", Oficinas);
+
 Home();
 
 changeTheme();
